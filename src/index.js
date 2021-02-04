@@ -20,6 +20,7 @@ const addButton = document.getElementById("addToPDF");
 addButton.addEventListener("click", openAlert);
 
 function openAlert(event) {
+  console.log(event);
   ipcRenderer.send("openAlert", "test msg");
 }
 
